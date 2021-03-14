@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Matchmakers-Student Form</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+ <div data-aos="zoom-out" data-aos-delay="200">
+        <h2>MATCH MAKERS</h2>
+      </div>
+    
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+
+      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+        <h2>Enter your Acadamic Details <h2>
+
+      </div>
+
+    </div>
+  </section><!-- End Hero Section -->
+	<!-- form header -->
+    <form action="admin_children.php" method="post">
+    <div class="form-header">
+    </div>
+    <!-- form body -->
+    <div class="form-body">
+    <!-- Name and Phnnumber -->
+
+    <div class="horizontal-group">
+        <div class="form-group left">
+            <label for="name" class="label-title"> First Name</label>
+            <input type="text" id="childfirstname" class="form-input" name="childfirstname" placeholder="enter child's first first name" required="required" />
+        </div>
+        <div class="form-group right">
+            <label for="name" class="label-title"> Last Name</label>
+            <input type="text" id="childlastname" class="form-input" name="childlastname" placeholder="enter child's last name" required="required" />
+        </div>
+    </div>
+	<!--Phone Number & Email-->
+	<div class="horizontal-group">
+    <div class="form-group left">
+	 <label class="label-title">Phone Number</label>
+        <input type="tel" id="PhoneNumber" class="form-input" name="PhoneNumber" placeholder="Enter your Phone Number" />
+       
+        </div>
+	
+	<div class="form-group right">
+	 <label class="label-title">Email ID</label>
+        <input type="email" id="email" class="form-input" name="email" placeholder="Enter your Email Id" />
+       
+        </div>
+      
+</div>
+    <!-- DOB and blood group -->
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label for="dob" class="label-title">Date of birth</label>
+         <input type="date"  class="form-input" id="dob" name="dob" placeholder="enter your password again"  />
+    </div>
+    <div class="form-group right">
+        <label for="bloodgroup" class="label-title">Qualification</label><br>
+
+        <select id="bloodgroup" class="form-input" name="bloodgroup" placeholder="enter your password again">
+        <option value="BacheloreEng">Bachelore's Engineering</option>
+        <option value="MastersEng">Master's Engineering</option>
+		<option value="BacheloreArts">Bachelore's Arts</option>
+        <option value="MastersArts">Master's Arts</option>
+        <option value="PHD">PHD</option>
+        <option value="HighSchool">Higher Scool Diploma</option>
+  </select>
+    </div>
+</div>
+<!-- Gender and Adhar Number -->
+
+
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label class="label-title">Gender</label>
+        <div class="input-group">
+            <label for="male"> <input type="radio" name="gender" value="male" id="male" /> Male</label>
+            <label for="female"> <input type="radio" name="gender" value="female" id="female" /> Female</label>
+            <label for="Others"> <input type="radio" name="gender" value="others" id="others" /> Others</label>
+			<br>
+        </div>
+    </div>
+
+    <div class="form-group right">
+        <label class="label-title">Years of Work Experience</label>
+        <input type="text" id="Experience" class="form-input" name="Experience" placeholder="Enter your years of experience" />
+    </div>
+</div>
+
+<!--Qualification and Occupation-->
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label for="qualification" class="label-title">Choose your field</label>
+       <select id="qualification" class="form-input" name="qualification" placeholder="Select your Qualification" required="required">
+	 <option value="ComputerScience">Computer Science</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Physics">Physics</option>
+    <option value="Chemistry">Chemistry</option>
+    <option value="MicroBiology">Micro Biology</option>
+    <option value="Biology">Biology</option>
+	<option value="Commerce">Commerce</option>
+    <option value="Economics">Economics</option>
+    <option value="History">History</option>
+    <option value="Archeology">Archeology</option><br>
+  </select>
+    </div>
+	<div class="form-group right">
+            <label for="nameoforg" class="label-title">Name of Country</label>
+            <input type="text" id="Country" class="form-input" name="Country" placeholder="Enter your country" required="required" />
+        </div>
+<!-- Gender and Adhar Number -->
+
+
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label class="label-title">Internships</label>
+                    <input type="text" id="Country" class="form-input" name="Country" placeholder="Enter your country" required="required" />
+    </div>
+
+    <div class="form-group right">
+        <label class="label-title">Uplode all your internship certificates</label>
+        
+		<input type="file" id="myfile" name="myfile" multiple><br><br>
+ 
+    </div>
+</div>
+<!-- Gender and Adhar Number -->
+
+
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label class="label-title">Certificated Courses</label>
+                    <input type="text" id="Country" class="form-input" name="Country" placeholder="Enter your country" required="required" />
+    </div>
+
+    <div class="form-group right">
+        <label class="label-title">Upload all your Certificated Course certificates</label>
+        
+		<input type="file" id="myfile" name="myfile" multiple><br><br>
+ 
+    </div>
+</div>
+<!-- Gender and Adhar Number -->
+
+
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label class="label-title">Projects</label>
+                    <input type="text" id="Country" class="form-input" name="Country" placeholder="Enter your country" required="required" />
+    </div>
+
+  
+</div>
+
+
+
+
+
+		</div>
+    </div>
+
+
+<!-- form footer -->
+    <div class="form-footer" align="left">
+    <button type="submit" class="btn1">Submit</button>
+</div>
+<br>
+<br>
+
+    </div>
+
+        </form>
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          
+
+          
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>MATCH MAKERS</strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
